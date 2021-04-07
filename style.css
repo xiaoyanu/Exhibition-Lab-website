@@ -1,0 +1,95 @@
+@charset "utf-8";
+*{
+	transition: all 0.5s; /* 全局动画缓慢加载 */
+}
+body,html{
+	height:100%;
+	width:100%;
+	background-image: url(https://imageproxy.chaoxing.com/0x0,q25,jpeg,s7oC1R0dga8H3lcT09CBTbk7p4lVK5i2KOSdwKyGe92w/http://p.ananas.chaoxing.com/star3/origin/b480f4c897b953bd3d4a88fec9538d5a.png);
+	background-repeat: no-repeat;
+	background-size:100% 100%;
+	-moz-background-size:100% 100%;
+}
+/* 大标题盒子 */
+#title-box{
+	height: 100px;
+	width: 300px;
+	margin: 10px auto;
+	text-align: center;
+	border: red 8px solid;
+	border-radius: 30px;
+	background-color: rgba(255, 255, 255, 0.7);
+}
+/* 标题字体样式 */
+#title{
+	font-size: 45px;
+	line-height: 80px;
+	color: yellow;
+	text-shadow: 0 0 8px red;
+}
+/* 主体盒子模型 */
+.main-box{
+	height: auto;
+	width: 1080px;
+	margin: 0 auto;
+	border: #6c9ef1 5px solid;
+	padding-left: 5px;
+	padding-bottom: 10px;
+	margin-bottom: 30px;
+	/* box-shadow: #9900ff 0 0 10px; */
+	background-color: rgba(255, 255, 255, 0.7);
+	/* transition: all 0.5s; */ /* 缓慢加载动画 */
+}
+.main-box:hover{
+	box-shadow: #9900ff 0 3px 10px;
+	transform:translate(calc(0px), calc(0px - 5px)); /* 上浮效果 */
+}
+/* 主体盒子标题 */
+.main-box-title{
+	text-align: left;
+	padding-left: 10px;
+	color: #0000FF;
+	margin-left: 10px;
+	font-size: 50px;
+	width: 800px;
+	border-bottom: #0000FF 3px solid;
+	text-shadow: #353535 1px 1px 1px;
+	text-shadow: red 0 0 8px;
+}
+/* 修饰作品样式 */
+.zp-box{
+	margin-left: 33px;
+	margin-top: 15px;
+	margin-bottom: 15px;
+	text-align: center;
+	display: inline-block;
+	border: #000 3px solid;
+	border-radius: 15px;
+}
+.zp-box:hover{
+	border: orange 3px solid;
+	box-shadow: black 0 0px 10px;
+}
+.zuopin img{
+	border-radius: 12px 12px 0px 0px;
+	border-bottom: #000 3px solid;
+}
+.zuopin img:hover{
+	border-bottom: orange 3px solid;
+}
+/* 美化滚动条 */
+			::-webkit-scrollbar {/*滚动条整体样式*/
+            width: 4px;     /*高宽分别对应横竖滚动条的尺寸*/
+            height: 4px;
+            scrollbar-arrow-color:red;
+			}
+			::-webkit-scrollbar-thumb {/*滚动条里面小方块*/
+            border-radius: 5px;
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            background: rgba(0,0,0,0.2);
+            scrollbar-arrow-color:red;
+			}
+			::-webkit-scrollbar-track {/*滚动条里面轨道*/
+            -webkit-box-shadow: inset 0 0 5px rgba(0,0,0,0.2);
+            border-radius: 0;
+            background: rgba(0,0,0,0.1);
