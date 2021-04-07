@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "utf-8"; 
 *{
 	transition: all 0.5s; /* 全局动画缓慢加载 */
 }
